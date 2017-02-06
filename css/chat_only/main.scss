@@ -31,6 +31,10 @@ $controls_btn_send_width: 120px;
         position: absolute;
         top: 0px;
         left: 0px;
+        background-image: url("/img/chat/mask_100.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
       }
       >.panel{
         margin-left: 35px;
@@ -40,6 +44,10 @@ $controls_btn_send_width: 120px;
       .panel-body {
         margin: 2px;
         padding: 2px;
+      }
+      .time {
+        font-size: 10px;
+        margin-left: 35px;
       }
     }
 

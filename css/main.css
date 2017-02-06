@@ -21,7 +21,11 @@ body {
       display: inline-block;
       position: absolute;
       top: 0px;
-      left: 0px; }
+      left: 0px;
+      background-image: url("/img/chat/mask_100.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain; }
     #main_chat_frame #main_chat_messages.panel-body .mymessage > .panel, #main_chat_frame #main_chat_messages.panel-body .anonmessage > .panel {
       margin-left: 35px;
       display: inline-block;
@@ -29,6 +33,9 @@ body {
     #main_chat_frame #main_chat_messages.panel-body .mymessage .panel-body, #main_chat_frame #main_chat_messages.panel-body .anonmessage .panel-body {
       margin: 2px;
       padding: 2px; }
+    #main_chat_frame #main_chat_messages.panel-body .mymessage .time, #main_chat_frame #main_chat_messages.panel-body .anonmessage .time {
+      font-size: 10px;
+      margin-left: 35px; }
 #main_chat_frame #main_chat_message_controls {
   position: relative;
   height: 80px;
