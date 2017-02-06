@@ -1,0 +1,73 @@
+$controls_h : 60px;
+$controls_vertical_padding: 10px;
+$controls_horizontal_padding: 15px;
+$controls_btn_send_width: 120px;
+
+#main_chat_frame {
+  #main_chat_heading.panel-heading {
+    background-color: #ffffff;
+
+    h4 {
+      margin: 0px;
+    }
+  }
+
+  #main_chat_messages.panel-body {
+    min-height: 400px;
+
+    .mymessage, .anonmessage {
+      text-align: left;
+      position: relative;
+      .avatar {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        //border-color: #dddddd;
+        border: 1px solid #dddddd;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+        margin-right: 5px;
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      >.panel{
+        margin-left: 35px;
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+      .panel-body {
+        margin: 2px;
+        padding: 2px;
+      }
+    }
+
+    .mymessage {
+      //text-align: right;
+    }
+
+  }
+  #main_chat_message_controls {
+    position: relative;
+    height: $controls_h + ($controls_vertical_padding * 2);
+    padding: $controls_vertical_padding $controls_horizontal_padding $controls_vertical_padding $controls_horizontal_padding;
+
+    #main_message_ta {
+      height: $controls_h;
+      position: absolute;
+      top: $controls_vertical_padding;
+      left: $controls_horizontal_padding;
+      margin-right: 150px;
+      width: calc(100% - #{$controls_btn_send_width + 3 * $controls_vertical_padding});
+    }
+    #main_message_btn_send {
+      height: $controls_h;
+      position: absolute;
+      width: $controls_btn_send_width;
+      top: $controls_vertical_padding;
+      right: $controls_vertical_padding;
+    }
+  }
+
+}

@@ -1,0 +1,50 @@
+body {
+  padding-top: 70px; }
+
+#main_chat_frame #main_chat_heading.panel-heading {
+  background-color: #ffffff; }
+  #main_chat_frame #main_chat_heading.panel-heading h4 {
+    margin: 0px; }
+#main_chat_frame #main_chat_messages.panel-body {
+  min-height: 400px; }
+  #main_chat_frame #main_chat_messages.panel-body .mymessage, #main_chat_frame #main_chat_messages.panel-body .anonmessage {
+    text-align: left;
+    position: relative; }
+    #main_chat_frame #main_chat_messages.panel-body .mymessage .avatar, #main_chat_frame #main_chat_messages.panel-body .anonmessage .avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+      margin-right: 5px;
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      left: 0px; }
+    #main_chat_frame #main_chat_messages.panel-body .mymessage > .panel, #main_chat_frame #main_chat_messages.panel-body .anonmessage > .panel {
+      margin-left: 35px;
+      display: inline-block;
+      margin-bottom: 5px; }
+    #main_chat_frame #main_chat_messages.panel-body .mymessage .panel-body, #main_chat_frame #main_chat_messages.panel-body .anonmessage .panel-body {
+      margin: 2px;
+      padding: 2px; }
+#main_chat_frame #main_chat_message_controls {
+  position: relative;
+  height: 80px;
+  padding: 10px 15px 10px 15px; }
+  #main_chat_frame #main_chat_message_controls #main_message_ta {
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    margin-right: 150px;
+    width: calc(100% - 150px); }
+  #main_chat_frame #main_chat_message_controls #main_message_btn_send {
+    height: 60px;
+    position: absolute;
+    width: 120px;
+    top: 10px;
+    right: 10px; }
+
+/*# sourceMappingURL=main.css.map */
