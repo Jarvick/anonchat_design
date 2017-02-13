@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09ab6aff-b8ae-436c-82bc-f838ebe411a6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/www.iml" afterPath="$PROJECT_DIR$/.idea/www.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_logs/2017-02-13.log" afterPath="$PROJECT_DIR$/_logs/2017-02-13.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_templates/twig/part_default_content.twig" afterPath="$PROJECT_DIR$/_templates/twig/part_default_content.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_templates/twig/part_default_page_last_js.twig" afterPath="$PROJECT_DIR$/_templates/twig/part_default_page_last_js.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_templates/twig_cache/59/20/d96174d210dc52d26ca660476ec5.php" afterPath="$PROJECT_DIR$/_templates/twig_cache/59/20/d96174d210dc52d26ca660476ec5.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_templates/twig_cache/b9/6a/1309425a48bf2478883b4d2ed72f.php" afterPath="$PROJECT_DIR$/_templates/twig_cache/b9/6a/1309425a48bf2478883b4d2ed72f.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/chat_only/main.css" afterPath="$PROJECT_DIR$/css/chat_only/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/chat_only/main.css.map" afterPath="$PROJECT_DIR$/css/chat_only/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/chat_only/main.scss" afterPath="$PROJECT_DIR$/css/chat_only/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/chat_only/send_anim.scss" afterPath="$PROJECT_DIR$/css/chat_only/send_anim.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
-    </list>
+    <list default="true" id="09ab6aff-b8ae-436c-82bc-f838ebe411a6" name="Default" comment="" />
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -79,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/chat_only/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.570115">
+            <state vertical-scroll-proportion="-19.076923">
               <caret line="109" column="12" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
               <folding>
                 <element signature="e#477#1036#0" expanded="false" />
@@ -122,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="development.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="development.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/development.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.05691964">
               <caret line="5" column="103" selection-start-line="5" selection-start-column="96" selection-end-line="5" selection-end-column="103" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
@@ -426,16 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/development.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="103" selection-start-line="5" selection-start-column="96" selection-end-line="5" selection-end-column="103" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_templates/twig/part_default_content.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.5">
@@ -488,11 +457,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/chat_only/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.570115">
+        <state vertical-scroll-proportion="-19.076923">
           <caret line="109" column="12" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
           <folding>
             <element signature="e#477#1036#0" expanded="false" />
             <element signature="e#2829#3536#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05691964">
+          <caret line="5" column="103" selection-start-line="5" selection-start-column="96" selection-end-line="5" selection-end-column="103" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
