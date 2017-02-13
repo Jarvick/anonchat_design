@@ -14,53 +14,113 @@ $controls_btn_send_width: 120px;
 
   #main_chat_messages.panel-body {
     min-height: 400px;
+    max-height: 600px;
+    overflow-y: scroll;
 
-    .mymessage, .anonmessage {
-      text-align: left;
-      position: relative;
-      .avatar {
-        width: 28px;
-        height: 28px;
-        border-radius: 50%;
-        background-color: #ffffff;
-        //border-color: #dddddd;
-        border: 1px solid #dddddd;
-        box-shadow: 0 1px 1px rgba(0,0,0,0.05);
-        margin-right: 5px;
-        display: inline-block;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        //background-image: url("/img/chat/mask_100.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-      > .panel{
-        margin-left: 35px;
-        display: inline-block;
-        margin-bottom: 1px;
-      }
-      .panel-body {
-        margin: 2px;
 
-        padding: 2px;
+    &.bubbles {
+      .mymessage, .anonmessage {
+        text-align: left;
+        position: relative;
+        .avatar {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          background-color: #ffffff;
+          //border-color: #dddddd;
+          border: 1px solid #dddddd;
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          margin-right: 5px;
+          display: inline-block;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          //background-image: url("/img/chat/mask_100.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        > .panel {
+          margin-left: 35px;
+          display: inline-block;
+          margin-bottom: 3px;
+
+          .panel-body {
+            margin: 2px;
+            padding: 2px;
+            padding-bottom: 1px;
+
+            .time {
+              font-size: 11px;
+              //margin-left: 40px;
+              //margin-bottom: 7px;
+              > span > i {
+                margin-right: 3px;
+                display: none;
+              }
+            }
+          }
+        }
       }
-      .time {
-        font-size: 11px;
-        margin-left: 40px;
-        margin-bottom: 7px;
-        > span > i {
-          margin-right: 3px;
+      .mymessage {
+        //text-align: right;
+      }
+    }
+    &.flat_style {
+      padding: 0px;
+      .mymessage, .anonmessage {
+        > .avatar {
+          display: none;
+        }
+        margin: 0px;
+        padding: 0px;
+
+        > .panel{
+          margin: 0px;
+          display: inline-block;
+          border-radius: 0px;
+          border-width: 0px;
+          box-shadow: none;
+          background-color: inherit;
+
+          .panel-body {
+            margin: 0px;
+            padding: 2px;
+            //padding-bottom: 1px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: inherit;
+
+            .time {
+              //font-size: 11px;
+              //margin-left: 40px;
+              //margin-bottom: 7px;
+              float: left;
+              > span > i {
+                margin-right: 3px;
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .mymessage {
+        background-color: #f4ffff;
+        &:not(:last-of-type) {
+          //border-bottom: 1px solid #aaecff;
+        }
+
+      }
+      .anonmessage {
+        //background-color: #aaecff;
+        &:not(:last-of-type) {
+          //border-bottom: 1px solid #f4ffff;
         }
       }
     }
 
-    .mymessage {
-      //text-align: right;
-    }
-
   }
+
   #main_chat_message_controls {
     position: relative;
     height: $controls_h + ($controls_vertical_padding * 2);

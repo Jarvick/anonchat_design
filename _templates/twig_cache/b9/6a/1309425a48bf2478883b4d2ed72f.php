@@ -20,6 +20,7 @@ class __TwigTemplate_b96a1309425a48bf2478883b4d2ed72f extends Twig_Template
 <script src=\"/js/jquery-3.1.1.js\"></script>
 <script src=\"/js/bootstrap.min.js\"></script>
 <script src=\"/js/public.js\"></script>
+<script src=\"/js/development.js\"></script>
 <!-- JS end -->";
     }
 
@@ -30,6 +31,6 @@ class __TwigTemplate_b96a1309425a48bf2478883b4d2ed72f extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  17 => 1,  86 => 18,  81 => 15,  76 => 14,  60 => 7,  53 => 18,  49 => 16,  45 => 14,  43 => 13,  38 => 10,  36 => 9,  23 => 1,  74 => 24,  71 => 13,  66 => 9,  63 => 19,  58 => 16,  55 => 19,  50 => 12,  47 => 15,  42 => 8,  39 => 7,  34 => 4,  31 => 7,);
+        return array (  17 => 1,);
     }
 }

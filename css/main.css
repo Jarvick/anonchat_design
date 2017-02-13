@@ -6,11 +6,13 @@ body {
   #main_chat_frame #main_chat_heading.panel-heading h4 {
     margin: 0px; }
 #main_chat_frame #main_chat_messages.panel-body {
-  min-height: 400px; }
-  #main_chat_frame #main_chat_messages.panel-body .mymessage, #main_chat_frame #main_chat_messages.panel-body .anonmessage {
+  min-height: 400px;
+  max-height: 600px;
+  overflow-y: scroll; }
+  #main_chat_frame #main_chat_messages.panel-body.bubbles .mymessage, #main_chat_frame #main_chat_messages.panel-body.bubbles .anonmessage {
     text-align: left;
     position: relative; }
-    #main_chat_frame #main_chat_messages.panel-body .mymessage .avatar, #main_chat_frame #main_chat_messages.panel-body .anonmessage .avatar {
+    #main_chat_frame #main_chat_messages.panel-body.bubbles .mymessage .avatar, #main_chat_frame #main_chat_messages.panel-body.bubbles .anonmessage .avatar {
       width: 28px;
       height: 28px;
       border-radius: 50%;
@@ -25,19 +27,46 @@ body {
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain; }
-    #main_chat_frame #main_chat_messages.panel-body .mymessage > .panel, #main_chat_frame #main_chat_messages.panel-body .anonmessage > .panel {
+    #main_chat_frame #main_chat_messages.panel-body.bubbles .mymessage > .panel, #main_chat_frame #main_chat_messages.panel-body.bubbles .anonmessage > .panel {
       margin-left: 35px;
       display: inline-block;
-      margin-bottom: 1px; }
-    #main_chat_frame #main_chat_messages.panel-body .mymessage .panel-body, #main_chat_frame #main_chat_messages.panel-body .anonmessage .panel-body {
-      margin: 2px;
-      padding: 2px; }
-    #main_chat_frame #main_chat_messages.panel-body .mymessage .time, #main_chat_frame #main_chat_messages.panel-body .anonmessage .time {
-      font-size: 11px;
-      margin-left: 40px;
-      margin-bottom: 7px; }
-      #main_chat_frame #main_chat_messages.panel-body .mymessage .time > span > i, #main_chat_frame #main_chat_messages.panel-body .anonmessage .time > span > i {
-        margin-right: 3px; }
+      margin-bottom: 3px; }
+      #main_chat_frame #main_chat_messages.panel-body.bubbles .mymessage > .panel .panel-body, #main_chat_frame #main_chat_messages.panel-body.bubbles .anonmessage > .panel .panel-body {
+        margin: 2px;
+        padding: 2px;
+        padding-bottom: 1px; }
+        #main_chat_frame #main_chat_messages.panel-body.bubbles .mymessage > .panel .panel-body .time, #main_chat_frame #main_chat_messages.panel-body.bubbles .anonmessage > .panel .panel-body .time {
+          font-size: 11px; }
+          #main_chat_frame #main_chat_messages.panel-body.bubbles .mymessage > .panel .panel-body .time > span > i, #main_chat_frame #main_chat_messages.panel-body.bubbles .anonmessage > .panel .panel-body .time > span > i {
+            margin-right: 3px;
+            display: none; }
+  #main_chat_frame #main_chat_messages.panel-body.flat_style {
+    padding: 0px; }
+    #main_chat_frame #main_chat_messages.panel-body.flat_style .mymessage, #main_chat_frame #main_chat_messages.panel-body.flat_style .anonmessage {
+      margin: 0px;
+      padding: 0px; }
+      #main_chat_frame #main_chat_messages.panel-body.flat_style .mymessage > .avatar, #main_chat_frame #main_chat_messages.panel-body.flat_style .anonmessage > .avatar {
+        display: none; }
+      #main_chat_frame #main_chat_messages.panel-body.flat_style .mymessage > .panel, #main_chat_frame #main_chat_messages.panel-body.flat_style .anonmessage > .panel {
+        margin: 0px;
+        display: inline-block;
+        border-radius: 0px;
+        border-width: 0px;
+        box-shadow: none;
+        background-color: inherit; }
+        #main_chat_frame #main_chat_messages.panel-body.flat_style .mymessage > .panel .panel-body, #main_chat_frame #main_chat_messages.panel-body.flat_style .anonmessage > .panel .panel-body {
+          margin: 0px;
+          padding: 2px;
+          padding-left: 10px;
+          padding-right: 10px;
+          background-color: inherit; }
+          #main_chat_frame #main_chat_messages.panel-body.flat_style .mymessage > .panel .panel-body .time, #main_chat_frame #main_chat_messages.panel-body.flat_style .anonmessage > .panel .panel-body .time {
+            float: left; }
+            #main_chat_frame #main_chat_messages.panel-body.flat_style .mymessage > .panel .panel-body .time > span > i, #main_chat_frame #main_chat_messages.panel-body.flat_style .anonmessage > .panel .panel-body .time > span > i {
+              margin-right: 3px;
+              display: none; }
+    #main_chat_frame #main_chat_messages.panel-body.flat_style .mymessage {
+      background-color: #f4ffff; }
 #main_chat_frame #main_chat_message_controls {
   position: relative;
   height: 80px;
@@ -63,75 +92,71 @@ body {
   display: inline-block;
   line-height: 100%;
   margin-left: 2px; }
-
-.circleG {
-  background-color: white;
-  float: left;
-  height: 7px;
-  width: 7px;
-  animation-name: bounce_circleG;
-  -o-animation-name: bounce_circleG;
-  -ms-animation-name: bounce_circleG;
-  -webkit-animation-name: bounce_circleG;
-  -moz-animation-name: bounce_circleG;
-  animation-duration: 1.5s;
-  -o-animation-duration: 1.5s;
-  -ms-animation-duration: 1.5s;
-  -webkit-animation-duration: 1.5s;
-  -moz-animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  animation-direction: normal;
-  -o-animation-direction: normal;
-  -ms-animation-direction: normal;
-  -webkit-animation-direction: normal;
-  -moz-animation-direction: normal;
-  border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%; }
-  .circleG:not(:last-of-type) {
-    margin-right: 2px; }
-
-.circle_group_block .circleG_1 {
-  animation-delay: 0.3s;
-  -o-animation-delay: 0.3s;
-  -ms-animation-delay: 0.3s;
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s; }
-
-.circle_group_block .circleG_2 {
-  animation-delay: 0.6s;
-  -o-animation-delay: 0.6s;
-  -ms-animation-delay: 0.6s;
-  -webkit-animation-delay: 0.6s;
-  -moz-animation-delay: 0.6s; }
-
-.circle_group_block .circleG_3 {
-  animation-delay: 0.9s;
-  -o-animation-delay: 0.9s;
-  -ms-animation-delay: 0.9s;
-  -webkit-animation-delay: 0.9s;
-  -moz-animation-delay: 0.9s; }
+  .circle_group_block .circleG {
+    background-color: white;
+    float: left;
+    height: 7px;
+    width: 7px;
+    animation-name: bounce_circleG;
+    -o-animation-name: bounce_circleG;
+    -ms-animation-name: bounce_circleG;
+    -webkit-animation-name: bounce_circleG;
+    -moz-animation-name: bounce_circleG;
+    animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-direction: normal;
+    -o-animation-direction: normal;
+    -ms-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    -moz-animation-direction: normal;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%; }
+    .circle_group_block .circleG:not(:last-of-type) {
+      margin-right: 2px; }
+  .circle_group_block .circleG_1 {
+    animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    -ms-animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s; }
+  .circle_group_block .circleG_2 {
+    animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    -ms-animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s; }
+  .circle_group_block .circleG_3 {
+    animation-delay: 0.9s;
+    -o-animation-delay: 0.9s;
+    -ms-animation-delay: 0.9s;
+    -webkit-animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s; }
 
 @keyframes bounce_circleG {
   50% {
-    background-color: red; } }
+    background-color: rgba(200, 200, 200, 0.98); } }
 @-o-keyframes bounce_circleG {
   50% {
-    background-color: red; } }
+    background-color: rgba(200, 200, 200, 0.98); } }
 @-ms-keyframes bounce_circleG {
   50% {
-    background-color: red; } }
+    background-color: rgba(200, 200, 200, 0.98); } }
 @-webkit-keyframes bounce_circleG {
   50% {
-    background-color: red; } }
+    background-color: rgba(200, 200, 200, 0.98); } }
 @-moz-keyframes bounce_circleG {
   50% {
-    background-color: red; } }
+    background-color: rgba(200, 200, 200, 0.98); } }
 
 /*# sourceMappingURL=main.css.map */
