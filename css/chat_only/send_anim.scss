@@ -1,0 +1,131 @@
+$sending_circles_size: 7px;
+$sending_circles_margin_right: 2px;
+$sending_circles_color: rgba(221,221,221,0.98);
+$sending_circles_color: rgba(200,200,200,0.98);
+$sending_circles_color: red;
+$sending_animation_delay: 1.5s;
+$sending_animation_delay_c1: $sending_animation_delay / 5;
+$sending_animation_delay_c2: ($sending_animation_delay / 5) * 2;
+$sending_animation_delay_c3: ($sending_animation_delay / 5) * 3;
+//$sending_circles_color: green;
+
+.circle_group_block{
+  width: 3 * $sending_circles_size  + 2 * $sending_circles_margin_right;
+  margin:auto;
+  height: $sending_circles_size;
+  display: inline-block;
+  line-height: 100%;
+  margin-left: $sending_circles_margin_right;
+}
+
+.circleG{
+  background-color:rgb(255,255,255);
+  float:left;
+  height: $sending_circles_size;
+
+  width: $sending_circles_size;
+  animation-name:bounce_circleG;
+  -o-animation-name:bounce_circleG;
+  -ms-animation-name:bounce_circleG;
+  -webkit-animation-name:bounce_circleG;
+  -moz-animation-name:bounce_circleG;
+  animation-duration: $sending_animation_delay;
+  -o-animation-duration: $sending_animation_delay;
+  -ms-animation-duration: $sending_animation_delay;
+  -webkit-animation-duration: $sending_animation_delay;
+  -moz-animation-duration: $sending_animation_delay;
+  animation-iteration-count:infinite;
+  -o-animation-iteration-count:infinite;
+  -ms-animation-iteration-count:infinite;
+  -webkit-animation-iteration-count:infinite;
+  -moz-animation-iteration-count:infinite;
+  animation-direction:normal;
+  -o-animation-direction:normal;
+  -ms-animation-direction:normal;
+  -webkit-animation-direction:normal;
+  -moz-animation-direction:normal;
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  &:not(:last-of-type) {
+    margin-right: $sending_circles_margin_right;
+  }
+}
+
+.circle_group_block .circleG_1{
+  animation-delay: $sending_animation_delay_c1;
+  -o-animation-delay: $sending_animation_delay_c1;
+  -ms-animation-delay: $sending_animation_delay_c1;
+  -webkit-animation-delay: $sending_animation_delay_c1;
+  -moz-animation-delay: $sending_animation_delay_c1;
+}
+
+.circle_group_block .circleG_2{
+  animation-delay: $sending_animation_delay_c2;
+  -o-animation-delay: $sending_animation_delay_c2;
+  -ms-animation-delay: $sending_animation_delay_c2;
+  -webkit-animation-delay: $sending_animation_delay_c2;
+  -moz-animation-delay: $sending_animation_delay_c2;
+}
+
+.circle_group_block .circleG_3{
+  animation-delay: $sending_animation_delay_c3;
+  -o-animation-delay: $sending_animation_delay_c3;
+  -ms-animation-delay: $sending_animation_delay_c3;
+  -webkit-animation-delay: $sending_animation_delay_c3;
+  -moz-animation-delay: $sending_animation_delay_c3;
+}
+
+
+
+@keyframes bounce_circleG{
+  0%{}
+
+  50%{
+    background-color: $sending_circles_color;
+  }
+
+  100%{}
+}
+
+@-o-keyframes bounce_circleG{
+  0%{}
+
+  50%{
+    background-color: $sending_circles_color;
+  }
+
+  100%{}
+}
+
+@-ms-keyframes bounce_circleG{
+  0%{}
+
+  50%{
+    background-color: $sending_circles_color;
+  }
+
+  100%{}
+}
+
+@-webkit-keyframes bounce_circleG{
+  0%{}
+
+  50%{
+    background-color: $sending_circles_color;
+  }
+
+  100%{}
+}
+
+@-moz-keyframes bounce_circleG{
+  0%{}
+
+  50%{
+    background-color: $sending_circles_color;
+  }
+
+  100%{}
+}

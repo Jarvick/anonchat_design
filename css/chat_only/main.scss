@@ -31,23 +31,28 @@ $controls_btn_send_width: 120px;
         position: absolute;
         top: 0px;
         left: 0px;
-        background-image: url("/img/chat/mask_100.png");
+        //background-image: url("/img/chat/mask_100.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
       }
-      >.panel{
+      > .panel{
         margin-left: 35px;
         display: inline-block;
-        margin-bottom: 5px;
+        margin-bottom: 1px;
       }
       .panel-body {
         margin: 2px;
+
         padding: 2px;
       }
       .time {
-        font-size: 10px;
-        margin-left: 35px;
+        font-size: 11px;
+        margin-left: 40px;
+        margin-bottom: 7px;
+        > span > i {
+          margin-right: 3px;
+        }
       }
     }
 
@@ -67,7 +72,7 @@ $controls_btn_send_width: 120px;
       top: $controls_vertical_padding;
       left: $controls_horizontal_padding;
       margin-right: 150px;
-      width: calc(100% - #{$controls_btn_send_width + 3 * $controls_vertical_padding});
+      width: calc(100% - #{$controls_btn_send_width + 5 + 2 * $controls_horizontal_padding});
     }
     #main_message_btn_send {
       height: $controls_h;
@@ -79,3 +84,5 @@ $controls_btn_send_width: 120px;
   }
 
 }
+
+@import "send_anim";
